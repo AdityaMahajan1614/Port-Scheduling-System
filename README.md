@@ -1,4 +1,4 @@
-# Port Scheduler Simulation
+# Port Scheduler System
 
 This project is a C-based simulation of a port scheduling system. It manages the docking and undocking of ships, cargo handling with cranes, and communication between different system components using advanced operating system concepts like Inter-Process Communication (IPC) and multithreading.
 
@@ -40,16 +40,22 @@ Ensure your project is set up with the following structure. Your compiled `sched
 ### Compilation
 
 Compile your [`scheduler.c`](scheduler.c) file using `gcc`.
+
 ````sh
 gcc scheduler.c -o scheduler.out
 ````
 
- Open Two Terminals 
-   - Please note that the executable file for the validation process has been provided
-    (validation.out). You may have to execute the command chmod 777 validation.out
-    before running the file.
-  - Run the validation program in one terminal with X as a command-line input, where X
-    denotes the test case number. Use the command ./validation.out X, where X is the test
-    case number.
-  - Run your scheduler program in the second terminal. Use the command
-    ./scheduler.out X, where X is the test case number.
+### Simulation
+
+1. Open Two Terminals:
+- Please note that the executable file for the validation process has been provided
+  (validation.out). You may have to execute the command chmod 777 validation.out
+  before running the file.
+- Run the validation program in one terminal with X as a command-line input, where X
+  denotes the test case number. Use the command ./validation.out X, where X is the test
+  case number.
+
+- Run your scheduler program in the second terminal. Use the command
+  ./scheduler.out X, where X is the test case number.
+
+#### Note: The validation program must be run first.
